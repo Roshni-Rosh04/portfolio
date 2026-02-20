@@ -613,3 +613,30 @@ h1, h2, h3, h4 {
         width: 100%;
     }
 }
+/* Mobile Navbar */
+@media (max-width: 768px) {
+
+  .nav-items {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    background: #111;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-items ul {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .nav-items.active {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+}
